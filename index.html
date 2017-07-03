@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="contact form example">
-  <title>Contact Form Example</title>
+  <title>Data BootCamp</title>
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- Style The Contact Form How Ever You Prefer -->
@@ -13,37 +13,49 @@
 
 <body>
   <div class="header pure-g">
-    <div class="pure-u-1-5"><h1>databootcamp</h1></div>
-    <div class="pure-u-3-5"><p>MAIOR BOOTCAMP DE DATA ANALYSIS DO RIO.</p></div>
+    <div class="pure-u-4-24">&nbsp;</div>
+    <div class="pure-u-md-4-24 top-size"><img src="img/logo.svg" class="logo" alt="databootcamp"></div>
+    <div class="pure-u-3-24">&nbsp;</div>
+    <div class="pure-u-9-24 title top-size"><p>MAIOR BOOTCAMP DE DATA ANALYSIS DO RIO.</p></div>
+    <div class="pure-u-3-24">&nbsp;</div>
   </div>
 
-  <div class="contact pure-g">
-    <div class="pure-u-5-5">
-      <span>data engeneering</span>
-      <span>data analysis</span>
-      <span>data visualization</span>
-    </div>
-    <div class="pure-u-12-24">
-      <p>Aprenda a organizar, extrair e interpretar os dados da sua empresa com as tecnologias mais avançadas usadas no mercado.</p>
-      <span>Preciso saber programar?<br/>Não. Vamos aprender juntos!</span>
-    </div>
-    <form id="gform" method="POST" class="pure-u-12-24 pure-form pure-form-stacked"
-      action="https://script.google.com/macros/s/AKfycbyjFwi_F3z39-zyYVHpIfAEkrynNQjvtUlsQx6g07QDqSGIRqgE/exec">
-      <!-- change the form action to your script url -->
+  <div class="pure-g">
+    <div class="contact pure-u-18-24">
+      <div class="pure-u-18-24 box-send-mail">
+        <div class="pure-u-24-24 target">
+          <span class="job">data engeneering</span>
+          <span class="square"></span>
+          <span class="job">data analysis</span>
+          <span class="square"></span>
+          <span class="job">data visualization</span>
+        </div>
+        <div class="pure-u-10-24 catch-up">
+          <p>Aprenda a organizar, extrair e interpretar os dados da sua empresa com as tecnologias mais avançadas usadas no mercado.</p>
+          <span>Preciso saber programar?<br/>Não. Vamos aprender juntos!</span>
+        </div>
+        <div class="pure-u-3-24">&nbsp;</div>
+        <div class="pure-u-10-24 send">
+          <form id="gform" method="POST" class="pure-form"
+            action="https://script.google.com/macros/s/AKfycbyjFwi_F3z39-zyYVHpIfAEkrynNQjvtUlsQx6g07QDqSGIRqgE/exec">
+            <!-- change the form action to your script url -->
 
-      <fieldset class="pure-group">
-        <input id="name" name="name" required placeholder="Nome" />
-      </fieldset>
+            <fieldset class="pure-group">
+              <input id="name" name="name" required placeholder="Nome" />
+            </fieldset>
 
-      <fieldset class="pure-group">
-        <input id="email" name="email" type="email" value=""
-        required placeholder="email"/>
-        <span id="email-invalid" style="display:none">
-          Must be a valid email address</span>
-      </fieldset>
+            <fieldset class="pure-group">
+              <input id="email" name="email" type="email" value=""
+              required placeholder="email"/>
+              <span id="email-invalid" style="display:none">
+                Must be a valid email address</span>
+            </fieldset>
 
-      <button class="button-success pure-button button-xlarge">quero participar</button>
-    </form>
+            <button class="button-success pure-button button-xlarge">quero participar</button>
+          </form>
+        </div>
+      </div>
+      </div>
   </div>
 
   <div class="us pure-g">

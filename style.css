@@ -1,5 +1,5 @@
 body {
-  margin: 2em;
+  /*margin: 2em;*/
 }
 aside {
     background: #1f8dd6; /* same color as selected state on site menu */
@@ -34,4 +34,86 @@ button {
 }
 #name, #email {
   width: 50%;
+}
+
+@font-face {
+    font-family: Futura;
+    src: url("fonts/Futura-Bold.otf");
+}
+
+.header {
+  background-image: url("img/header-bg.png");
+  background-size: auto 855px;
+  overflow: hidden;
+  height: 730px;
+}
+
+.title {
+	font-size: 48px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: -1.8px;
+	text-align: left;
+	color: #ffffff;
+}
+
+.title p {
+  /*font-family: Futura;*/
+}
+
+.logo {
+  margin-top: 15%;
+  max-width: 100%;
+}
+
+.contact {
+  height: 552px;
+  margin: auto;
+  position: relative;
+  top: -170px;
+  background-color: #0a2233;
+	box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.contact .box-send-mail {
+  margin:auto;
+  display: block;
+}
+
+.contact .target {
+  font-family: Gotham, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 90px;
+}
+
+.contact .catch-up {
+  background-color: red;
+  margin-top: 118px;
+}
+
+.contact .send {
+  margin-top: 118px;
+  background-color: green;
+}
+
+.square {
+	width: 8px;
+	height: 8px;
+	background-color: #10344c;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.top-size {
+  margin-top: 187px;
 }

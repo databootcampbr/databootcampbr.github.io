@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="172px" height="201px" viewBox="0 0 172 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-2" transform="translate(-192.000000, -187.000000)">
+            <g id="Group" transform="translate(192.000000, 187.000000)">
+                <text id="DATA-BOOT-CAMP" font-family="Futura-Bold, Futura" font-size="42" font-weight="bold" line-spacing="34" letter-spacing="-2" fill="#FFFFFF">
+                    <tspan x="24" y="114">DATA </tspan>
+                    <tspan x="24" y="148">BOOT </tspan>
+                    <tspan x="24" y="182">CAM</tspan>
+                    <tspan x="123.924" y="182" letter-spacing="-0.5">P</tspan>
+                </text>
+                <rect id="Rectangle" stroke="#0B2333" stroke-width="7" x="3.5" y="3.5" width="156" height="185"></rect>
+                <rect id="Rectangle" stroke="#00BFFF" x="14.5" y="14.5" width="157" height="186"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

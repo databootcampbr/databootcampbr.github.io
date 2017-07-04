@@ -1,5 +1,5 @@
 body {
-  /*margin: 2em;*/
+  font-family: 'Roboto', sans-serif;
 }
 
 aside {
@@ -194,18 +194,22 @@ button {
 .us .coach {
   background-color: #0b2333;
   height: 469px;
-  margin-right: 16px;
   opacity: 0.5;
-  width: 300px;
+  padding: 0 8px;
+}
+
+.us .coach:nth-of-type(1) {
+  padding-left: 0px;
 }
 
 .us .coach h3 {
-  margin-top: 65px;
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
   letter-spacing: -0.6px;
   margin-bottom: 8px;
+  margin-top: 0px;
+  padding-top: 64px;
   text-align: center;
   color: #ffffff;
 }
@@ -221,16 +225,14 @@ button {
   color: #ffffff;
 }
 
-.us .show-off {
-  display: inline-block;
-  width: 290px;
-  height: 48px;
+.show-off {
+  color: #525252;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: -0.8px;
-  margin-top: 15px;
-  color: #525252;
+  position: relative;
+  top: -113px;
 }
 
 .square {

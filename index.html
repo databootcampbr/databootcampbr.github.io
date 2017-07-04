@@ -5,76 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="contact form example">
   <title>Data BootCamp</title>
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <!-- Style The Contact Form How Ever You Prefer -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="header pure-g">
-    <div class="pure-u-4-24">&nbsp;</div>
-    <div class="pure-u-md-4-24 top-size"><img src="img/logo.svg" class="logo" alt="databootcamp"></div>
-    <div class="pure-u-3-24">&nbsp;</div>
-    <div class="pure-u-9-24 title top-size"><p>MAIOR BOOTCAMP DE DATA ANALYSIS DO RIO.</p></div>
-    <div class="pure-u-3-24">&nbsp;</div>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m2 top-size"><img src="img/logo.svg" class="logo" alt="databootcamp"></div>
+        <div class="col s12 offset-m1 m6 title top-size"><p>MAIOR BOOTCAMP DE DATA ANALYSIS DO RIO.</p></div>
+      </div>
+    </div>
   </div>
 
-  <div class="pure-g">
-    <div class="contact pure-u-18-24">
-      <div class="pure-u-18-24 box-send-mail">
-        <div class="pure-u-24-24 target">
+  <div class="container">
+    <div class="contact row">
+      <div class="box-send-mail">
+        <div class="col m12 s12 target">
           <span class="job">data engeneering</span>
           <span class="square"></span>
           <span class="job">data analysis</span>
           <span class="square"></span>
           <span class="job">data visualization</span>
         </div>
-        <div class="pure-u-10-24 catch-up">
+        <div class="col m5 offset-m1 catch-up">
           <p>Aprenda a organizar, extrair e interpretar os dados da sua empresa com as tecnologias mais avançadas usadas no mercado.</p>
           <span><h4>Preciso saber programar?</h4><br/>Não. Vamos aprender juntos!</span>
         </div>
-        <div class="pure-u-3-24">&nbsp;</div>
-        <div class="pure-u-10-24 send">
-          <form id="gform" method="POST" class="pure-form"
+        <div class="col m5 offset-m1 send">
+          <form id="gform" method="POST"
             action="https://script.google.com/macros/s/AKfycbyjFwi_F3z39-zyYVHpIfAEkrynNQjvtUlsQx6g07QDqSGIRqgE/exec">
-            <!-- change the form action to your script url -->
 
-            <fieldset class="pure-group">
-              <label for="name">Nome</label>
-              <input id="name" name="name" required />
-            </fieldset>
+            <div class="input-field">
+              <label data-error="wrong name." class="active" for="name">Nome</label>
+              <input id="name" name="name" type="text" required  class="validate" />
+            </div>
 
-            <fieldset class="pure-group">
-              <label for="email">Email</label>
+            <div class="input-field">
+              <label data-error="Must be a valid email address" class="active" for="email">Email</label>
               <input id="email" name="email" type="email" value=""
-              required />
-              <span id="email-invalid" style="display:none">
-                Must be a valid email address</span>
-            </fieldset>
+              required  class="validate" />
+            </div>
 
             <button class="button-success pure-button button-xlarge sign">quero participar</button>
           </form>
         </div>
       </div>
-      </div>
+    </div>
 
-    <div class="us pure-u-18-24">
+    <div class="us row">
       <h2>mentores</h2>
-      <div class="coach pure-u-7-24">
+      <div class="col m4">
+        <div class="coach">
         <h3>Tarsis Azevedo</h3>
         <span>data engeneering</span>
+        </div>
       </div>
-      <div class="coach pure-u-7-24">
+      <div class="col m4">
+        <div class="coach">
         <h3>Diogo Munaro</h3>
         <span>data engeneering</span>
+        </div>
       </div>
-      <div class="coach pure-u-7-24">
+      <div class="col m4">
+        <div class="coach">
         <h3>Renan Oliveira</h3>
         <span>data engeneering</span>
+        </div>
       </div>
-      <span class="show-off">Conheça um dos melhores profissionais na área de bigdata da sua cidade.</span>
     </div>
+    <div class="row show-off">Conheça um dos melhores profissionais na área de bigdata da sua cidade.</div>
 
   </div>
   <!-- Customise the Thankyou Message People See when they submit the form: -->
@@ -84,7 +87,14 @@
   </div>
 
   <!-- Submit the Form to Google Using "AJAX" -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script data-cfasync="false" type="text/javascript"
   src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      Materialize.updateTextFields();
+    });
+  </script>
 </body>
 </html>

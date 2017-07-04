@@ -32,7 +32,7 @@
         </div>
         <div class="pure-u-10-24 catch-up">
           <p>Aprenda a organizar, extrair e interpretar os dados da sua empresa com as tecnologias mais avançadas usadas no mercado.</p>
-          <span>Preciso saber programar?<br/>Não. Vamos aprender juntos!</span>
+          <span><h4>Preciso saber programar?</h4><br/>Não. Vamos aprender juntos!</span>
         </div>
         <div class="pure-u-3-24">&nbsp;</div>
         <div class="pure-u-10-24 send">
@@ -41,39 +41,41 @@
             <!-- change the form action to your script url -->
 
             <fieldset class="pure-group">
-              <input id="name" name="name" required placeholder="Nome" />
+              <label for="name">Nome</label>
+              <input id="name" name="name" required />
             </fieldset>
 
             <fieldset class="pure-group">
+              <label for="email">Email</label>
               <input id="email" name="email" type="email" value=""
-              required placeholder="email"/>
+              required />
               <span id="email-invalid" style="display:none">
                 Must be a valid email address</span>
             </fieldset>
 
-            <button class="button-success pure-button button-xlarge">quero participar</button>
+            <button class="button-success pure-button button-xlarge sign">quero participar</button>
           </form>
         </div>
       </div>
       </div>
-  </div>
 
-  <div class="us pure-g">
-    <div class="pure-u-24-24"><h2>mentores</h2></div>
-    <div class="pure-u-8-24">
-      <h3>Tarsis Azevedo</h3>
-      <span>data engeneering</span>
+    <div class="us pure-u-18-24">
+      <h2>mentores</h2>
+      <div class="coach pure-u-7-24">
+        <h3>Tarsis Azevedo</h3>
+        <span>data engeneering</span>
+      </div>
+      <div class="coach pure-u-7-24">
+        <h3>Diogo Munaro</h3>
+        <span>data engeneering</span>
+      </div>
+      <div class="coach pure-u-7-24">
+        <h3>Renan Oliveira</h3>
+        <span>data engeneering</span>
+      </div>
     </div>
-    <div class="pure-u-8-24">
-      <h3>Diogo Munaro</h3>
-      <span>data engeneering</span>
-    </div>
-    <div class="pure-u-8-24">
-      <h3>Renan Oliveira</h3>
-      <span>data engeneering</span>
-    </div>
-  </div>
 
+  </div>
   <!-- Customise the Thankyou Message People See when they submit the form: -->
   <div style="display:none;" id="thankyou_message">
     <h2><em>Thanks</em> for contacting us!

@@ -1,6 +1,7 @@
 body {
   /*margin: 2em;*/
 }
+
 aside {
     background: #1f8dd6; /* same color as selected state on site menu */
     padding: 0.3em 1em;
@@ -31,9 +32,6 @@ textarea {
 }
 button {
   float: right;
-}
-#name, #email {
-  width: 50%;
 }
 
 @font-face {
@@ -79,7 +77,7 @@ button {
 }
 
 .contact .box-send-mail {
-  margin:auto;
+  margin: auto;
   display: block;
 }
 
@@ -96,14 +94,129 @@ button {
   margin-top: 90px;
 }
 
+.contact .box-send-mail .job {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: #ffffff;
+}
+
 .contact .catch-up {
-  background-color: red;
-  margin-top: 118px;
+  margin-top: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.contact .catch-up span {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #1c5880;
+}
+
+.contact .catch-up span h4 {
+  font-weight: bold;
+  font-size: 17px;
+  margin: 0;
+  display: inline;
 }
 
 .contact .send {
   margin-top: 118px;
-  background-color: green;
+}
+
+.contact .send label {
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.contact .send input {
+  background-color: #0a2333;
+  border: none;
+  border-bottom: 1px solid #00bfff;
+  border-radius: 0px !important;
+  box-shadow: none;
+  outline: none;
+  padding: 5px 0;
+  width: 280px;
+}
+
+.contact .send input:focus {
+  border-bottom: 1px solid #00bfff;
+  color: white;
+}
+
+.contact .send button.sign {
+  background-color: #0a2333;
+  border-radius: 1px;
+  border: solid 1px #00b6f3;
+  color: #ffffff;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  height: 60px;
+  line-height: 1.43;
+  letter-spacing: -0.5px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  width: 180px;
+}
+
+.contact .send button.sign:hover {
+  background-color: #00b6f3;
+}
+
+.us {
+  margin: auto;
+}
+
+.us h2 {
+  height: 62px;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: -1.8px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #0b2333;
+}
+
+.us .coach {
+  background-color: #0b2333;
+  height: 469px;
+  margin-right: 16px;
+  opacity: 0.5;
+  width: 300px;
+}
+
+.us .coach h3 {
+  margin-top: 65px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -0.6px;
+  margin-bottom: 8px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.us .coach span {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
 }
 
 .square {

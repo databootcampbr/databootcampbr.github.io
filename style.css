@@ -1,3 +1,19 @@
+@font-face {
+    font-family: Futura;
+    src: url("fonts/Futura-Bold.otf");
+}
+
+@font-face {
+    font-family: Futura-Bold;
+    src: url("fonts/Futura-Bold.otf");
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url("fonts/Gotham-Light.otf");
+}
+
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -40,11 +56,6 @@ button {
   float: right;
 }
 
-@font-face {
-    font-family: Futura;
-    src: url("fonts/Futura-Bold.otf");
-}
-
 .header {
   background-image: url("img/header-bg.png");
   background-repeat: no-repeat;
@@ -56,19 +67,17 @@ button {
   height: 730px;
 }
 
-.title {
-	font-size: 48px;
+.title p {
+  font-family: Futura;
+  font-size: 48px;
 	font-weight: bold;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: normal;
-	letter-spacing: -1.8px;
+	letter-spacing: 2px;
 	text-align: left;
-	color: #ffffff;
-}
-
-.title p {
-  /*font-family: Futura;*/
+  color: #ffffff;
+  margin-top: 12px;
 }
 
 .logo {
@@ -92,7 +101,7 @@ button {
 }
 
 .contact .target {
-  font-family: Gotham, sans-serif;
+  font-family: Gotham;
   font-size: 14px;
   font-weight: 300;
   font-style: normal;
@@ -100,27 +109,21 @@ button {
   line-height: normal;
   letter-spacing: 4px;
   text-align: left;
-  color: #ffffff;
+  color: #999999;
   margin-top: 90px;
+  text-transform: uppercase;
 }
 
-.contact .box-send-mail .job {
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 4px;
-  color: #ffffff;
-}
 
 .contact .catch-up {
   margin-top: 100px;
   font-size: 20px;
   font-weight: bold;
-  line-height: 1.2;
-  letter-spacing: -0.4px;
+  line-height: 1.4;
+  letter-spacing: -0.6px;
   text-align: left;
   color: #ffffff;
+  font-family: Gotham;
 }
 
 .contact .catch-up span {
@@ -143,7 +146,11 @@ button {
 }
 
 .contact .send label {
+  font-family: Gotham;
+  font-size: 16px;
   font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
   line-height: 1.25;
   letter-spacing: -0.5px;
   color: #ffffff;
@@ -180,6 +187,12 @@ button {
   text-transform: uppercase;
   text-align: center;
   width: 180px;
+  font-family: Gotham;
+  font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.43;
+	letter-spacing: -0.5px;
 }
 
 .contact .send button.sign:hover {

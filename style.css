@@ -9,27 +9,33 @@ aside {
     color: #fff;
     margin-bottom: 2em;
 }
+
 textarea {
   width: 100%;
 }
+
 .content-head {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin: 2em 0 1em;
 }
+
 .is-center {
   text-align: center;
 }
+
 .button-success {
   color: white;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background: rgb(28, 184, 65); /* this is a green */
 }
+
 .button-xlarge {
   font-size: 125%;
 }
+
 button {
   float: right;
 }
@@ -41,7 +47,11 @@ button {
 
 .header {
   background-image: url("img/header-bg.png");
-  background-size: auto 855px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+  background-size: cover;
   overflow: hidden;
   height: 730px;
 }
@@ -147,7 +157,6 @@ button {
   box-shadow: none;
   outline: none;
   padding: 5px 0;
-  width: 280px;
 }
 
 .contact .send input:focus {
@@ -155,29 +164,31 @@ button {
   color: white;
 }
 
-.contact .send button.sign {
+.contact .send .sign {
   background-color: #0a2333;
   border-radius: 1px;
   border: solid 1px #00b6f3;
   color: #ffffff;
+  display: inline-block;
   float: left;
   font-size: 14px;
   font-weight: bold;
   height: 60px;
-  line-height: 1.43;
+  line-height: 60px;
   letter-spacing: -0.5px;
   margin-top: 30px;
   text-transform: uppercase;
+  text-align: center;
   width: 180px;
 }
 
 .contact .send button.sign:hover {
-  background-color: #00b6f3;
+  background-color: #0e2c40;
 }
 
 .us {
   margin: auto;
-  top: -160px;
+  top: -60px;
   position: relative;
 }
 
@@ -198,8 +209,12 @@ button {
   padding: 0 8px;
 }
 
-.us .coach:nth-of-type(1) {
+.us .col:nth-of-type(1) {
   padding-left: 0px;
+}
+
+.us .col:nth-of-type(3) {
+  padding-right: 0px;
 }
 
 .us .coach h3 {
@@ -232,7 +247,7 @@ button {
   line-height: 1.5;
   letter-spacing: -0.8px;
   position: relative;
-  top: -113px;
+  top: -13px;
 }
 
 .square {
@@ -245,4 +260,8 @@ button {
 
 .top-size {
   margin-top: 187px;
+}
+
+.input-field {
+  margin-top: 0px;
 }

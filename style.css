@@ -177,6 +177,8 @@ button {
 
 .us {
   margin: auto;
+  top: -160px;
+  position: relative;
 }
 
 .us h2 {
@@ -217,6 +219,18 @@ button {
   margin: 0 auto;
   text-align: center;
   color: #ffffff;
+}
+
+.us .show-off {
+  display: inline-block;
+  width: 290px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
+  margin-top: 15px;
+  color: #525252;
 }
 
 .square {

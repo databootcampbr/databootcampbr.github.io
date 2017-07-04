@@ -40,9 +40,8 @@
   }
 
   .thankyou_message {
-    height: 240px !important;
     margin-top: 10px !important;
-    width: 390px !important;
+    width: 100% !important;
   }
 
 }

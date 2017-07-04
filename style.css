@@ -13,6 +13,35 @@
     src: url("fonts/Gotham-Light.otf");
 }
 
+@media (max-width: 700px) {
+
+  .header .title p {
+    font-size: 45px;
+    padding-left: 15px;
+    margin-top: 15px;
+  }
+
+  .contact {
+    height: 760px !important;
+    padding-left: 10px;
+  }
+
+  .contact .target {
+    margin-top: 40px !important;
+  }
+
+  .contact .catch-up {
+    margin-top: 30px !important;
+  }
+
+  .contact .send {
+    margin-top: 30px !important;
+    width: 330px;
+  }
+
+}
+
+
 
 body {
   font-family: 'Roboto', sans-serif;

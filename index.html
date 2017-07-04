@@ -34,8 +34,9 @@
           <div class="hide-on-med-and-up"></div>
           <span class="square"></span>
           <span class="job">data visualization</span>
-        </div>        
-        <div class="col m5 offset-m1 catch-up">
+
+        </div>
+        <div class="col m4 offset-m1 catch-up">
           <p>Aprenda a organizar, extrair e interpretar os dados da sua empresa com as tecnologias mais avançadas usadas no mercado.</p>
           <span><h4>Preciso saber programar?</h4><br/>Não. Vamos aprender juntos!</span>
         </div>
@@ -54,8 +55,15 @@
               required  class="validate" />
             </div>
 
-            <button class="button-success pure-button button-xlarge sign">quero participar</button>
+            <button class="button-success pure-button button-xlarge sign" href="#modal1">quero participar</button>
           </form>
+          <div style="display:none;" id="thankyou_message">
+            <p>
+              Estamos felizes em ter você na nossa lista de interessados.
+              Fique de olho em seu email, mandaremos mais informações sobre o evento em breve!
+              <a href="http://twitter.com/databootcampbr">@databootcampbr</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -84,13 +92,6 @@
     <div class="row show-off hide-on-small-only">Conheça um dos melhores profissionais na área de bigdata da sua cidade.</div>
 
   </div>
-  <!-- Customise the Thankyou Message People See when they submit the form: -->
-  <div style="display:none;" id="thankyou_message">
-    <h2><em>Thanks</em> for contacting us!
-      We will get back to you soon!</h2>
-  </div>
-
-  <!-- Submit the Form to Google Using "AJAX" -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script data-cfasync="false" type="text/javascript"
   src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>

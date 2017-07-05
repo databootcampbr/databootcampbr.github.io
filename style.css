@@ -201,7 +201,7 @@ button {
 }
 
 .contact .send input:focus {
-  border-bottom: 1px solid #00bfff;
+  border-bottom: 1px solid #00bfff !important;
   color: white;
 }
 
@@ -331,4 +331,11 @@ button {
 
 .input-field {
   margin-top: 0px;
+}
+
+.progress {
+  background-color: #00b6f3;
+}
+.progress .indeterminate {
+  background-color: #0e2c40;
 }

@@ -41,21 +41,25 @@
           <span><h4>Preciso saber programar?</h4><br/>Não. Vamos aprender juntos!</span>
         </div>
         <div class="col m5 offset-m1 send">
-          <form id="gform" method="POST"
-            action="https://script.google.com/macros/s/AKfycbyjFwi_F3z39-zyYVHpIfAEkrynNQjvtUlsQx6g07QDqSGIRqgE/exec">
+            <form id="gform" method="POST"
+              action="https://script.google.com/macros/s/AKfycbyjFwi_F3z39-zyYVHpIfAEkrynNQjvtUlsQx6g07QDqSGIRqgE/exec">
 
-            <div class="input-field">
-              <label data-error="wrong name." class="active" for="name">Nome</label>
-              <input id="name" name="name" type="text" required  class="validate" />
-            </div>
+              <div class="sign-please">
+                <div class="input-field">
+                  <label data-error="wrong name." class="active" for="name">Nome</label>
+                  <input id="name" name="name" type="text" required  class="validate" autocomplete="off" />
+                </div>
 
-            <div class="input-field">
-              <label data-error="Must be a valid email address" class="active" for="email">Email</label>
-              <input id="email" name="email" type="email" value=""
-              required  class="validate" />
-            </div>
+                <div class="input-field">
+                  <label data-error="Must be a valid email address" class="active" for="email">Email</label>
+                  <input id="email" name="email" type="email" required  class="validate" autocomplete="off" />
+                </div>
 
-            <button class="button-success pure-button button-xlarge sign" href="#modal1">quero participar</button>
+                <button class="button-success pure-button button-xlarge sign" href="#modal1">quero participar</button>
+              </div>
+              <div class="progress" style="display:none">
+                <div class="indeterminate"></div>
+              </div>
           </form>
           <div style="display:none;" class="thankyou_message" id="thankyou_message">
             <p>
@@ -99,6 +103,15 @@
   <script>
     $(document).ready(function() {
       Materialize.updateTextFields();
+      $("button.sign").click(function(e){
+        var name = $("form #name").val();
+        var email = $("form #email").val();
+        if (name === "" || email === "") {
+          return;
+        }
+        $(".sign-please").hide();
+        $(".progress").show();
+      });
     });
   </script>
 </body>

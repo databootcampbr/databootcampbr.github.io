@@ -13,7 +13,7 @@
     src: url("fonts/Gotham-Light.otf");
 }
 
-@media (max-width: 700px) {
+@media (max-width: 994px) {
 
   .header .title p {
     font-size: 45px;
@@ -28,6 +28,8 @@
 
   .contact .target {
     margin-top: 40px !important;
+    text-align: left !important;
+
   }
 
   .contact .catch-up {
@@ -36,7 +38,6 @@
 
   .contact .send {
     margin-top: 30px !important;
-    width: 330px;
   }
 
   .thankyou_message {
@@ -50,8 +51,12 @@
 
 }
 
+@media (min-width: 994px) {
+  .hide-on-med-and-down-square {
+    padding-left: 0 !important;
+  }
 
-
+}
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -145,7 +150,7 @@ button {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 4px;
-  text-align: left;
+  text-align: center;
   color: #999999;
   margin-top: 90px;
   text-transform: uppercase;
@@ -305,7 +310,11 @@ button {
 	height: 8px;
 	background-color: #10344c;
   display: inline-block;
-  margin: 0 20px;
+  margin: 20 auto;
+}
+
+.square-space {
+  padding-left: 20px;
 }
 
 .thankyou_message {
@@ -334,6 +343,7 @@ button {
 
 .input-field {
   margin-top: 0px;
+  max-width: 100%;
 }
 
 .progress {

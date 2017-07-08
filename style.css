@@ -13,13 +13,13 @@
     src: url("fonts/Gotham-Light.otf");
 }
 
-@media (max-width: 800px) {
+@media (max-width: 568px) {
   .header .title p {
-    font-size: 30px !important;
+    font-size: 20px !important;
   }
 
   .contact .catch-up span {
-    font-size: 12px !important;
+    font-size: 8px !important;
   }
 
 }

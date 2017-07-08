@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="share.bar.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -65,6 +66,12 @@
                 <div class="indeterminate"></div>
               </div>
           </form>
+          <div
+            class="share-bar"
+            data-title="O maior databootcamp do Rio de Janeiro!"
+            data-url="http://databootcamp.com.br"
+            data-hashtags="#databootcamp">
+          </div>
           <div style="display:none;" class="thankyou_message" id="thankyou_message">
             <p>
               Estamos felizes em ter você na nossa lista de interessados.
@@ -126,6 +133,27 @@
 
     ga('create', 'UA-102049615-1', 'auto');
     ga('send', 'pageview');
+  </script>
+  <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '272412253234423',
+        xfbml      : true,
+        version    : 'v2.9'
+      });
+      FB.AppEvents.logPageView();
+    };
+  </script>
+  <script src="share.bar.min.js"></script>
+  <script>
+      new ShareBar({
+        'facebookAppId': '272412253234423',
+        'theme': 'minimal-light',
+        'buttonWidth': 50,
+        'buttonPadding': 5,
+        'networks': ['facebook', 'twitter', 'google', 'whatsapp', 'email']
+      });
   </script>
 </body>
 </html>

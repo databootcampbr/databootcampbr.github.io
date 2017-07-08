@@ -134,19 +134,16 @@
     ga('create', 'UA-102049615-1', 'auto');
     ga('send', 'pageview');
   </script>
-  <script src="http://connect.facebook.net/en_US/sdk.js"></script>
+  <script src="sdk.js"></script>
+  <script src="share.bar.min.js"></script>
   <script>
-    window.fbAsyncInit = function() {
+    $(document).ready(function() {
       FB.init({
         appId      : '272412253234423',
         xfbml      : true,
         version    : 'v2.9'
       });
       FB.AppEvents.logPageView();
-    };
-  </script>
-  <script src="share.bar.min.js"></script>
-  <script>
       new ShareBar({
         'facebookAppId': '272412253234423',
         'theme': 'minimal-light',
@@ -154,6 +151,7 @@
         'buttonPadding': 5,
         'networks': ['facebook', 'twitter', 'google', 'whatsapp', 'email']
       });
+    });
   </script>
 </body>
 </html>

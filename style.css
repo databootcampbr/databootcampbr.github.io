@@ -13,11 +13,10 @@
     src: url("fonts/Gotham-Light.otf");
 }
 
-@media  (max-device-width: 640px) {
+@media (max-device-width: 640px) {
 
   .title p {
-    -webkit-text-size-adjust: none;
-    font-size: 15px !important;
+    font-size: 35px !important;
   }
 
   .contact .catch-up span {
@@ -29,7 +28,7 @@
 @media (max-width: 994px) {
 
   .title p {
-    font-size: 45px !important;
+    font-size: 43px !important;
     padding-left: 15px;
     margin-top: 15px;
   }

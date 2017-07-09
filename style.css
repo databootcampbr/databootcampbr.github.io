@@ -16,6 +16,7 @@
 @media  (max-device-width: 640px) {
 
   .title p {
+    -webkit-text-size-adjust: 100%;
     color: yellow !important;
     font-size: 15px !important;
   }

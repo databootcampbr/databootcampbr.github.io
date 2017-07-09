@@ -13,7 +13,7 @@
     src: url("fonts/Gotham-Light.otf");
 }
 
-@media screen and (device-aspect-ratio: 2/3) {
+@media screen and (device-aspect-ratio: 40/71) {
   .title p {
     font-size: 20px !important;
     color: red !important;

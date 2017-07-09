@@ -13,7 +13,7 @@
     src: url("fonts/Gotham-Light.otf");
 }
 
-@media (max-width: 568px) {
+@media (max-width: 800px) {
   .header .title p {
     font-size: 20px !important;
   }

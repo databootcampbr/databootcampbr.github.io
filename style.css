@@ -14,7 +14,7 @@
 }
 
 @media screen and (device-aspect-ratio: 2/3) {
-  .header .title p {
+  .title p {
     font-size: 20px !important;
     color: red !important;
   }
@@ -27,10 +27,11 @@
 
 @media (max-width: 994px) {
 
-  .header .title p {
+  .title p {
     font-size: 45px !important;
     padding-left: 15px;
     margin-top: 15px;
+    color: black !important;
   }
 
   .contact {

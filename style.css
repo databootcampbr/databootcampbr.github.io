@@ -13,24 +13,26 @@
     src: url("fonts/Gotham-Light.otf");
 }
 
-@media (max-device-width: 640px) {
+/*@media (max-device-width: 640px) {
 
-  .title p {
+  .title h1 {
     font-size: 35px !important;
+    letter-spacing: 1px !important;
   }
 
   .contact .catch-up span {
     font-size: 8px !important;
   }
 
-}
+}*/
 
 @media (max-width: 994px) {
 
-  .title p {
-    font-size: 43px !important;
+  .title h1 {
+    font-size: 45px !important;
     padding-left: 15px;
     margin-top: 15px;
+    letter-spacing: 1.5px !important;
   }
 
   .contact {
@@ -126,7 +128,7 @@ button {
   height: 730px;
 }
 
-.title p {
+.title h1 {
   font-family: Futura;
   font-size: 48px;
 	font-weight: bold;

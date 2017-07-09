@@ -13,7 +13,7 @@
     src: url("fonts/Gotham-Light.otf");
 }
 
-/*@media (max-device-width: 640px) {
+@media (max-device-width: 640px) {
 
   .title h1 {
     font-size: 35px !important;
@@ -24,7 +24,7 @@
     font-size: 8px !important;
   }
 
-}*/
+}
 
 @media (max-width: 994px) {
 

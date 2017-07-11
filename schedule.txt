@@ -1,0 +1,42 @@
+Programadores
+
+Primeira Semana: Início
+- Introdução a data science - 1
+- Pandas - Introdução à Python - 2
+- Pandas + Seaborn - Visualização de dados - 1
+
+Segunda Semana: Estatistica
+- Estatistica descritiva - 1
+- Data Clean - 1
+- Inferencia estatistica - 1
+- Scikit-Learn - Introdução a ML - 1
+
+Terceira Semana: Machine Learning
+- Supervised learning algorithms - Regressão Linear - 2
+- Unsupervised Machine Learning - Clusterização - 2
+
+Quarta Semana: Big Data
+- Introdução a Hadoop - 1
+- Spark SQL - 2
+- Spark MLlib - 1
+
+
+Não Programadores
+
+Primeira Semana: Início
+- Introdução a data science - 1
+- Python - Variáveis, Condicionais, Loops e Dados - 3
+
+Segunda Semana: Pandas
+- Pandas - Introdução à Python - 2
+- Pandas + Seaborn - Visualização de dados - 2
+
+Terceira Semana: Estatistica
+- Estatistica descritiva - 1
+- Data Clean - 1
+- Inferencia descritiva - 1
+- Scikit-Learn - Introdução a ML - 1
+
+Quarta Semana: Machine Learning
+- Supervised learning algorithms - Regressão Linear - 2
+- Unsupervised Machine Learning - Clusterização - 2

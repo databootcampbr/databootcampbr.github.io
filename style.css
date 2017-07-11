@@ -67,6 +67,10 @@
     margin: 40px 0 10px 0;
   }
 
+  .schedule .week {
+    width: auto !important;
+    float: none !important;
+  }
 }
 
 @media (min-width: 994px) {
@@ -259,6 +263,78 @@ button {
   background-color: #0e2c40;
 }
 
+.schedule {
+  position: relative;
+  top: -100px;
+}
+
+.schedule p {
+  font-family: Gotham;
+}
+
+.schedule .tabs .tab:nth-child(2) {
+  float: right;
+}
+
+.schedule .tabs .tab a {
+  color: #0a2233;
+  padding: 0px;
+}
+
+.schedule .tabs .indicator {
+  background-color: #666;
+}
+
+.schedule ol {
+  list-style: none;
+  padding: 0 !important;
+}
+
+.schedule h2 {
+  margin: 0px;
+  height: 62px;
+  font-size: 48px;
+  line-height: normal;
+  letter-spacing: 1px;
+  font-family: Futura-Bold;
+  text-align: left;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.schedule h3 {
+  color: #111;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.schedule .week {
+  position: relative;
+  float: left;
+  width: 426px;
+  background: #fff;
+  height: 277px;
+  margin: 0 0 20px 0;
+  padding: 30px;
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
+  border-radius: 3px;
+}
+
+.schedule .week ul {
+  position: relative;
+  margin: 30px 0 0 0;
+  color: #777;
+  line-height: 2;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: #0a2233;
+  padding-left: 40px;
+}
+
+.schedule .week:nth-child(even) {
+  float: right; 
+}
+
 .us {
   margin: auto;
   top: -60px;
@@ -367,6 +443,7 @@ button {
 .progress {
   background-color: #00b6f3;
 }
+
 .progress .indeterminate {
   background-color: #0e2c40;
 }

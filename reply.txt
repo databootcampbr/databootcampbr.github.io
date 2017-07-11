@@ -1,0 +1,12 @@
+Obrigado por se inscrever no nosso bootcamp!
+
+Somos profissionais de dados com experiencia em varios projetos grandes, e
+estamos montando a 1ª turma no Rio de Janeiro para levar o conhecimento adquirido
+para vocês.
+
+Nesse bootcamp teremos turmas para **programadores** e **pessoas não tecnicas**.
+Veremos estatistica basica e avançada, analise e visualização de dados e machine learning. (talvez infraestrutura de bigdata?)
+
+Gostariamos de conhecer mais de você para montarmos um curso especial e voltado para o mercado.
+
+(BOTAO RESPONDA).

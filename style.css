@@ -359,7 +359,8 @@ button {
 
 .us .coach {
   background-color: #0b2333;
-  height: 469px;
+  min-height: 469px;
+  height: 100%;
   opacity: 0.5;
   padding: 0 8px;
 }
@@ -380,8 +381,6 @@ button {
   display: block;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.25;
-  letter-spacing: -1px;
   margin: 0 auto;
   text-align: center;
   color: #ffffff;

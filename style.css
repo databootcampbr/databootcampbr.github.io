@@ -26,6 +26,13 @@
 
 }
 
+@media (max-width: 1250px) {
+
+  .schedule .week {
+    width: auto !important;
+    float: none !important;
+  }
+}
 @media (max-width: 994px) {
 
   .title h1 {
@@ -67,10 +74,6 @@
     margin: 40px 0 10px 0;
   }
 
-  .schedule .week {
-    width: auto !important;
-    float: none !important;
-  }
 }
 
 @media (min-width: 994px) {
@@ -276,6 +279,9 @@ button {
   float: right;
 }
 
+.schedule .tabs .tab:nth-child(1) {
+  float: left;
+}
 .schedule .tabs .tab a {
   color: #0a2233;
   padding: 0px;
@@ -356,14 +362,6 @@ button {
   height: 469px;
   opacity: 0.5;
   padding: 0 8px;
-}
-
-.us .col:nth-of-type(1) {
-  padding-left: 0px;
-}
-
-.us .col:nth-of-type(3) {
-  padding-right: 0px;
 }
 
 .us .coach h3 {

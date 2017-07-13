@@ -124,6 +124,11 @@ button {
   float: right;
 }
 
+
+#diogo {
+  background-image: url("img/diogo.jpg");
+}
+
 .header {
   background-image: url("img/header-bg-min.png");
   background-repeat: no-repeat;
@@ -338,7 +343,7 @@ button {
 }
 
 .schedule .week:nth-child(even) {
-  float: right; 
+  float: right;
 }
 
 .us {
@@ -363,6 +368,12 @@ button {
   height: 100%;
   opacity: 0.5;
   padding: 0 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .us .coach h3 {

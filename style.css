@@ -455,3 +455,17 @@ button {
 .progress .indeterminate {
   background-color: #0e2c40;
 }
+
+.card .card-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.card .card-image img {
+  float:right;
+  height:auto;
+}
+
+.card .card-title {
+  font-weight: 400;
+}

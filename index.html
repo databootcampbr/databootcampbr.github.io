@@ -55,7 +55,29 @@
             <p><b>Horário:</b></p>
             <p>19h às 21h</p>
             <p><b>Valor:</b></p>
-            <p>3x de R$250 (sem juros)</p>   
+            <p>3x de R$250 (sem juros)</p>
+          <div id="modal-shirt" class="modal">
+            <div class="modal-content">
+              <form id="gform" method="POST"
+                action="https://script.google.com/macros/s/AKfycbznGNZ5WmZdmIB_1NEEaQ0lrIZUNmGeqspcQrP_Yw70ugg5oGHM/exec">
+
+                <div class="shirt-size">
+                  <div class="input-field">
+                    <select name="size" id="size">
+                      <option value="" disabled selected>Escolha um tamanho</option>
+                      <option value="P">P</option>
+                      <option value="M">M</option>
+                      <option value="G">G</option>
+                    </select>
+                    <label>Tamanho da Camisa</label>
+                  </div>
+                  <input id="code" name="code" type="hidden"/>
+
+                  <input type="submit" class="button-success pure-button button-xlarge sign" value="Enviar" />
+                </div>
+              </form>
+            </div>
+          </div>
           <div
             class="share-bar"
             data-title="O maior databootcamp do Rio de Janeiro!"
@@ -191,10 +213,10 @@
     <div class="row show-off" style="display: none;">Conheçam os melhores profissionais na área de bigdata da sua cidade.</div>
 
   </div>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script data-cfasync="false" type="text/javascript"
-  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  src="form-submission-handler.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
   <script>
     $(document).ready(function() {
@@ -245,10 +267,11 @@
           code: code
       }, {
           success : function(transactionCode) {
-              alert("https://script.google.com/macros/s/AKfycbznGNZ5WmZdmIB_1NEEaQ0lrIZUNmGeqspcQrP_Yw70ugg5oGHM/exec" + transactionCode);
+              $("#code").val(transactionCode);
+              $('#modal-shirt').modal('open');
           },
           abort : function() {
-              alert("abort");
+              $("#code").val("");
           }
       });
       // Redirecionando o cliente caso o navegador não tenha suporte ao Lightbox

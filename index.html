@@ -46,26 +46,16 @@
           <span><h4>Preciso saber programar?</h4><br/>Não. Vamos aprender juntos!</span>
         </div>
         <div class="col l5 offset-l1 s12 send">
-            <form id="gform" method="POST"
-              action="https://script.google.com/macros/s/AKfycbyjFwi_F3z39-zyYVHpIfAEkrynNQjvtUlsQx6g07QDqSGIRqgE/exec">
-
-              <div class="sign-please">
-                <div class="input-field">
-                  <label data-error="wrong name." class="active" for="name">Nome</label>
-                  <input id="name" name="name" type="text" required  class="validate" autocomplete="off" />
-                </div>
-
-                <div class="input-field">
-                  <label data-error="Must be a valid email address" class="active" for="email">Email</label>
-                  <input id="email" name="email" type="email" required  class="validate" autocomplete="off" />
-                </div>
-
-                <button class="button-success pure-button button-xlarge sign" href="#modal1">quero participar</button>
-              </div>
-              <div class="progress" style="display:none">
-                <div class="indeterminate"></div>
-              </div>
-          </form>
+            <button class="button-success pure-button button-xlarge sign" onclick="javascript:pagamentoPopup();">quero participar</button>
+            <p>Venha participar da nossa primeira turma!</p>
+            <p><b>Endereço:</b></p>
+            <p>Av das Américas, 700, bloco 7, MyOffice - Barra da Tijuca dentro do Città América</p>
+            <p><b>Datas:</b></p>
+            <p>31 de Julho a 24 de Agosto, sempre de segunda a quinta.</p>
+            <p><b>Horário:</b></p>
+            <p>19h às 21h</p>
+            <p><b>Valor:</b></p>
+            <p>3x de R$250 (sem juros)</p>   
           <div
             class="share-bar"
             data-title="O maior databootcamp do Rio de Janeiro!"
@@ -201,6 +191,7 @@
     <div class="row show-off" style="display: none;">Conheçam os melhores profissionais na área de bigdata da sua cidade.</div>
 
   </div>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script data-cfasync="false" type="text/javascript"
   src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
@@ -230,6 +221,7 @@
   </script>
   <script src="sdk.js"></script>
   <script src="share.bar.min.js"></script>
+  <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
   <script>
     $(document).ready(function() {
       FB.init({
@@ -246,6 +238,24 @@
         'networks': ['facebook', 'twitter', 'google', 'whatsapp', 'email']
       });
     });
+
+    function pagamentoPopup(){
+      var code = 'C969DD0FC2C2721CC47B1FA4B20D3A6A';
+      var isOpenLightbox = PagSeguroLightbox({
+          code: code
+      }, {
+          success : function(transactionCode) {
+              alert("https://script.google.com/macros/s/AKfycbznGNZ5WmZdmIB_1NEEaQ0lrIZUNmGeqspcQrP_Yw70ugg5oGHM/exec" + transactionCode);
+          },
+          abort : function() {
+              alert("abort");
+          }
+      });
+      // Redirecionando o cliente caso o navegador não tenha suporte ao Lightbox
+      if (!isOpenLightbox){
+          location.href="https://pagseguro.uol.com.br/v2/checkout/payment.html?code="+code;
+      }
+    }
   </script>
 </body>
 </html>

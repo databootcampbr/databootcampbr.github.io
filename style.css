@@ -43,7 +43,6 @@
   .title h1 {
     font-size: 45px !important;
     padding-left: 15px;
-    /*margin-top: 15px;*/
     letter-spacing: 1.5px !important;
   }
 
@@ -54,6 +53,10 @@
 
   .contact .info {
     margin-top: 0px !important;
+  }
+
+  .contact .sign-area .detail {
+    margin-top: 0px;
   }
 
   .contact .info h2 {
@@ -88,7 +91,6 @@
   }
 
   .thankyou_message {
-    /*margin-top: 10px !important;*/
     width: 100% !important;
   }
 
@@ -281,10 +283,6 @@ span.value {
   display: inline;
 }
 
-.contact .send {
-  /*margin-top: 118px;*/
-}
-
 .contact .send .info p {
   margin: 0px;
 }
@@ -317,11 +315,13 @@ span.value {
 
 .sign-area .detail {
   color: #1c5880;
-  display: block;
-  margin: 5px 0 0 0;
+  display: inline-block;
+  font-size: 12px;
   padding: 0;
   text-transform: uppercase;
-  width: 100% !important;
+  margin-top: 20px;
+  height: 60px;
+  line-height: 60px;
 }
 
 .col.l12.sign-area {
@@ -334,7 +334,6 @@ span.value {
   border: solid 1px #00b6f3;
   color: #ffffff;
   display: inline-block;
-  float: left;
   font-size: 14px;
   font-weight: bold;
   height: 60px;
@@ -343,7 +342,6 @@ span.value {
   margin-top: 20px;
   text-transform: uppercase;
   text-align: center;
-  width: 220px;
   font-family: Gotham;
   font-weight: bold;
 	font-style: normal;
@@ -354,6 +352,15 @@ span.value {
 
 .contact .send button.sign:hover {
   background-color: #0e2c40;
+}
+
+hr.split { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
 }
 
 .schedule {

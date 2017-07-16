@@ -315,10 +315,13 @@ span.value {
   color: white;
 }
 
-p.detail {
-  margin-top: 35px;
+.sign-area .detail {
   color: #1c5880;
+  display: block;
+  margin: 5px 0 0 0;
+  padding: 0;
   text-transform: uppercase;
+  width: 100% !important;
 }
 
 .col.l12.sign-area {

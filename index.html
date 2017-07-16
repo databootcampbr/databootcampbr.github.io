@@ -41,36 +41,42 @@
           <span class="job">data visualization</span>
 
         </div>
-        <div class="col l4 offset-l1 catch-up">
-          <p>Aprenda a organizar, extrair e interpretar os dados da sua empresa com as tecnologias mais avançadas usadas no mercado.</p>
-          <span><h4>Preciso saber programar?</h4><br/>Não. Vamos aprender juntos!</span>
-        </div>
         <div class="col l5 offset-l1 s12 send">
-            <form id="gform" method="POST"
-              action="https://script.google.com/macros/s/AKfycbyjFwi_F3z39-zyYVHpIfAEkrynNQjvtUlsQx6g07QDqSGIRqgE/exec">
+            <div class="info">
+              <h2>31 de Julho a 24 de Agosto</h2>
+              <p class="beta-class">Data Science para não programadores</p>
+              <p class="place">
+                <span class="value">My Office - Barra Da Tijuca</span></br>
+                <span class="value">Segundas as Quintas</span></br>
+                <span class="value">19 as 21h</span>
+              </p>
+            </div>
+            <div class="col l12 s12 sign-area">
+              <button class="col s12 l8 button-success pure-button button-xlarge sign" onclick="javascript:pagamentoPopup();">Inscreva-se</button>
+              <!--<a href="#" class="col s4 l3 offset-l1 detail">+ detalhes</a>-->
+            </div>
+            <hr class="col s12 split hide-on-large-only">
+          <div id="modal-shirt" class="modal">
+            <div class="modal-content">
+              <form id="gform" method="POST"
+                action="https://script.google.com/macros/s/AKfycbznGNZ5WmZdmIB_1NEEaQ0lrIZUNmGeqspcQrP_Yw70ugg5oGHM/exec">
 
-              <div class="sign-please">
-                <div class="input-field">
-                  <label data-error="wrong name." class="active" for="name">Nome</label>
-                  <input id="name" name="name" type="text" required  class="validate" autocomplete="off" />
+                <div class="shirt-size">
+                  <div class="input-field">
+                    <select name="size" id="size">
+                      <option value="" disabled selected>Escolha um tamanho</option>
+                      <option value="P">P</option>
+                      <option value="M">M</option>
+                      <option value="G">G</option>
+                    </select>
+                    <label>Tamanho da Camisa</label>
+                  </div>
+                  <input id="code" name="code" type="hidden"/>
+
+                  <input type="submit" class="button-success pure-button button-xlarge sign" value="Enviar" />
                 </div>
-
-                <div class="input-field">
-                  <label data-error="Must be a valid email address" class="active" for="email">Email</label>
-                  <input id="email" name="email" type="email" required  class="validate" autocomplete="off" />
-                </div>
-
-                <button class="button-success pure-button button-xlarge sign" href="#modal1">quero participar</button>
-              </div>
-              <div class="progress" style="display:none">
-                <div class="indeterminate"></div>
-              </div>
-          </form>
-          <div
-            class="share-bar"
-            data-title="O maior databootcamp do Rio de Janeiro!"
-            data-url="http://databootcamp.com.br"
-            data-hashtags="#databootcamp">
+              </form>
+            </div>
           </div>
           <div style="display:none;" class="thankyou_message" id="thankyou_message">
             <p>
@@ -80,6 +86,16 @@
             </p>
           </div>
         </div>
+        <div class="col l4 offset-l1 catch-up">
+          <p>Aprenda a organizar, extrair e interpretar os dados da sua empresa com as tecnologias mais avançadas usadas no mercado.</p>
+          <span><h4>Preciso saber programar?</h4><br/>Não. Vamos aprender juntos!</span>
+          <div
+            class="share-bar"
+            data-title="O maior databootcamp do Rio de Janeiro!"
+            data-url="http://databootcamp.com.br"
+            data-hashtags="#databootcamp">
+          </div>
+        </div>
       </div>
     </div>
 
@@ -87,8 +103,8 @@
       <div class="col s12 m12">
         <h2>Cursos</h2>
         <p>
-          Os cursos são hands-on. Usamos <b>Python</b> e <b>Jupyter</b> trazendo problemas de mercado para as aulas. </br>
-          A primeira turma acontecerá de segunda a quinta, 2 horas por dia, com duração de 4 semanas.
+          Os cursos são 100% hands-on. Usamos <b>Python</b> e <b>Jupyter</b> trazendo problemas de mercado para as aulas.<br/>
+          Cada aluno terá um ambiente exclusivo na amazon, totalmente configurado para executar suas analises em aula.
         </p>
         <ul class="tabs">
           <li class="tab s12"><a href="#curso1">Programadores</a></li>
@@ -201,9 +217,10 @@
     <div class="row show-off" style="display: none;">Conheçam os melhores profissionais na área de bigdata da sua cidade.</div>
 
   </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script data-cfasync="false" type="text/javascript"
-  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  src="form-submission-handler.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
   <script>
     $(document).ready(function() {
@@ -230,6 +247,7 @@
   </script>
   <script src="sdk.js"></script>
   <script src="share.bar.min.js"></script>
+  <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
   <script>
     $(document).ready(function() {
       FB.init({
@@ -246,6 +264,25 @@
         'networks': ['facebook', 'twitter', 'google', 'whatsapp', 'email']
       });
     });
+
+    function pagamentoPopup(){
+      var code = '7552B437DADA655994876FB3C962B90C';
+      var isOpenLightbox = PagSeguroLightbox({
+          code: code
+      }, {
+          success : function(transactionCode) {
+              $("#code").val(transactionCode);
+              $('#modal-shirt').modal('open');
+          },
+          abort : function() {
+              $("#code").val("");
+          }
+      });
+      // Redirecionando o cliente caso o navegador não tenha suporte ao Lightbox
+      if (!isOpenLightbox){
+          location.href="https://pagseguro.uol.com.br/v2/checkout/payment.html?code="+code;
+      }
+    }
   </script>
 </body>
 </html>

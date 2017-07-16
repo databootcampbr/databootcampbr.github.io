@@ -64,7 +64,7 @@
   }
 
   .contact .info .beta-class {
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 1.4px;
   }
 
@@ -333,9 +333,9 @@ span.value {
   line-height: 60px;
 }
 
-.col.l12.sign-area {
+/*.col.l12.sign-area {
   margin-left: -10px;
-}
+}*/
 
 .contact .send .sign {
   background-color: #00b6f3;

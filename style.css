@@ -92,6 +92,10 @@
     margin-top: 15px !important;
   }
 
+  .contact .send .sign {
+    margin-left: 0px !important;
+  }
+
   .thankyou_message {
     width: 100% !important;
   }
@@ -333,10 +337,6 @@ span.value {
   line-height: 60px;
 }
 
-/*.col.l12.sign-area {
-  margin-left: -10px;
-}*/
-
 .contact .send .sign {
   background-color: #00b6f3;
   border-radius: 1px;
@@ -357,6 +357,7 @@ span.value {
 	font-stretch: normal;
 	line-height: 1.43;
 	letter-spacing: -0.5px;
+  margin-left: -10px;
 }
 
 .contact .send button.sign:hover {

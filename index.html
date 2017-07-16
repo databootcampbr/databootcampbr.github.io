@@ -42,49 +42,27 @@
 
         </div>
         <div class="col l5 offset-l1 s12 send">
-            <div class="info">
-              <h2>31 de Julho a 24 de Agosto</h2>
-              <p class="beta-class">Data Science para não programadores</p>
-              <p class="place">
-                <span class="value">My Office - Barra Da Tijuca</span></br>
-                <span class="value">Segundas as Quintas</span></br>
-                <span class="value">19 as 21h</span>
-              </p>
-            </div>
-            <div class="col l12 s12 sign-area">
-              <button class="col s12 l8 button-success pure-button button-xlarge sign" onclick="javascript:pagamentoPopup();">Inscreva-se</button>
-              <!--<a href="#" class="col s4 l3 offset-l1 detail">+ detalhes</a>-->
-            </div>
-            <hr class="col s12 split hide-on-large-only">
-          <div id="modal-shirt" class="modal">
-            <div class="modal-content">
-              <form id="gform" method="POST"
-                action="https://script.google.com/macros/s/AKfycbznGNZ5WmZdmIB_1NEEaQ0lrIZUNmGeqspcQrP_Yw70ugg5oGHM/exec">
-
-                <div class="shirt-size">
-                  <div class="input-field">
-                    <select name="size" id="size">
-                      <option value="" disabled selected>Escolha um tamanho</option>
-                      <option value="P">P</option>
-                      <option value="M">M</option>
-                      <option value="G">G</option>
-                    </select>
-                    <label>Tamanho da Camisa</label>
-                  </div>
-                  <input id="code" name="code" type="hidden"/>
-
-                  <input type="submit" class="button-success pure-button button-xlarge sign" value="Enviar" />
-                </div>
-              </form>
-            </div>
-          </div>
-          <div style="display:none;" class="thankyou_message" id="thankyou_message">
-            <p>
-              Estamos felizes em ter você na nossa lista de interessados.
-              Fique de olho em seu email, mandaremos mais informações sobre o evento em breve!
-              <a href="http://twitter.com/databootcampbr">@databootcampbr</a>
+          <div class="info">
+            <h2>31 de Julho a 24 de Agosto</h2>
+            <p class="beta-class">Data Science para não programadores</p>
+            <p class="place">
+              <span class="value">My Office - Barra Da Tijuca</span></br>
+              <span class="value">Segundas as Quintas</span></br>
+              <span class="value">19 as 21h</span>
             </p>
           </div>
+          <div class="col l12 s12 sign-area">
+            <button class="col s12 l8 button-success pure-button button-xlarge sign" onclick="javascript:checkAvailability();">Inscreva-se</button>
+            <!--<a href="#" class="col s4 l3 offset-l1 detail">+ detalhes</a>-->
+          </div>
+          <hr class="col s12 split hide-on-large-only">
+          <!--<div style="display:none;" class="thankyou_message" id="thankyou_message">-->
+            <!--<p>-->
+              <!--Estamos felizes em ter você no nosso curso.-->
+              <!--Fique de olho em seu email, mandaremos mais informações sobre a turma em breve!-->
+              <!--<a href="http://twitter.com/databootcampbr">@databootcampbr</a>-->
+            <!--</p>-->
+          <!--</div>-->
         </div>
         <div class="col l4 offset-l1 catch-up">
           <p>Aprenda a organizar, extrair e interpretar os dados da sua empresa com as tecnologias mais avançadas usadas no mercado.</p>
@@ -215,13 +193,42 @@
       </div>
     </div>
     <div class="row show-off" style="display: none;">Conheçam os melhores profissionais na área de bigdata da sua cidade.</div>
+    <div id="modal-shirt" class="modal row">
+      <div class="modal-content">
+        <form id="gform" class="form" method="POST"
+          action="https://script.google.com/macros/s/AKfycbznGNZ5WmZdmIB_1NEEaQ0lrIZUNmGeqspcQrP_Yw70ugg5oGHM/exec">
 
+          <div class="shirt-size">
+            <div class="input-field row">
+              <select name="size" id="size" class="col s12 m6">
+                <option value="" disabled selected>Escolha seu tamanho</option>
+                <option value="P">P</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+              </select>
+            </div>
+            <input id="code" name="code" type="hidden"/>
+
+            <div class="row">
+              <input type="submit" class="btn modal-action modal-close" value="Enviar" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="modal-full" class="modal row">
+      <p>Esta turma já está cheia! Fique de olho para proximas turmas!</p>
+      <input type="submit" class="btn modal-action modal-close" value="Fechar" />
+    </div>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script data-cfasync="false" type="text/javascript"
   src="form-submission-handler.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <script src="sdk.js"></script>
+  <script src="share.bar.min.js"></script>
+  <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
   <script>
     $(document).ready(function() {
       Materialize.updateTextFields();
@@ -236,18 +243,6 @@
       });
     });
   </script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-102049615-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-  <script src="sdk.js"></script>
-  <script src="share.bar.min.js"></script>
-  <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
   <script>
     $(document).ready(function() {
       FB.init({
@@ -264,13 +259,25 @@
         'networks': ['facebook', 'twitter', 'google', 'whatsapp', 'email']
       });
     });
-
+    var registrations = 0;
+    var url = "https://script.google.com/macros/s/AKfycbznGNZ5WmZdmIB_1NEEaQ0lrIZUNmGeqspcQrP_Yw70ugg5oGHM/exec";
+    $.getJSON(url, function(data) {
+      registrations = data.counter;
+    });
+    function checkAvailability(){
+      if (registrations >= 12) {
+        $("#modal-full").modal("open");
+      } else {
+        pagamentoPopup();
+      }
+    }
     function pagamentoPopup(){
       var code = '7552B437DADA655994876FB3C962B90C';
       var isOpenLightbox = PagSeguroLightbox({
           code: code
       }, {
           success : function(transactionCode) {
+              console.log(registrations);
               $("#code").val(transactionCode);
               $('#modal-shirt').modal('open');
           },
@@ -283,6 +290,15 @@
           location.href="https://pagseguro.uol.com.br/v2/checkout/payment.html?code="+code;
       }
     }
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-102049615-1', 'auto');
+    ga('send', 'pageview');
   </script>
 </body>
 </html>

@@ -580,3 +580,7 @@ hr.split {
 #modal-shirt {
   margin: 0 auto;
 }
+
+.small {
+    font-size: 10px;
+}

@@ -1,6 +1,6 @@
 // get all data in form and return object
-function getFormData() {
-  var elements = document.getElementById("gform").elements; // all form elements
+function getFormData(formId) {
+  var elements = document.getElementById(formId).elements; // all form elements
   var fields = Object.keys(elements).map(function(k) {
     if(elements[k].name !== undefined) {
       return elements[k].name;
@@ -39,7 +39,7 @@ function getFormData() {
 
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
-  var data = getFormData();         // get the values submitted in the form
+  var data = getFormData(event.target.id);         // get the values submitted in the form
   var url = event.target.action;  //
   var xhr = new XMLHttpRequest();
   xhr.open('POST', url);
@@ -48,8 +48,8 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   xhr.onreadystatechange = function() {
       console.log( xhr.status, xhr.statusText )
       console.log(xhr.responseText);
-      document.getElementById('gform').style.display = 'none'; // hide form
-      document.getElementById('thankyou_message').style.display = 'block';
+      document.getElementById(event.target.id).style.display = 'none'; // hide form
+      document.getElementById(event.target.id+'-thankyou_message').style.display = 'block';
       return;
   };
   // url encode form data for sending as post data
@@ -61,7 +61,9 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
 function loaded() {
   console.log('form submission handler loaded successfully');
   // bind to the submit event of our form
-  var form = document.getElementById('gform');
+  var form = document.getElementById("gform-contact");
+  form.addEventListener("submit", handleFormSubmit, false);  
+  var form = document.getElementById("gform-shirt");
   form.addEventListener("submit", handleFormSubmit, false);
 };
 document.addEventListener('DOMContentLoaded', loaded, false);

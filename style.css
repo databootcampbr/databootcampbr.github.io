@@ -46,11 +46,6 @@
     letter-spacing: 1.5px !important;
   }
 
-  .contact {
-    height: 760px !important;
-    padding: 10px !important;
-  }
-
   .contact .info {
     margin-top: 0px !important;
   }
@@ -74,7 +69,6 @@
   }
 
   .contact .target {
-    margin-top: 30px !important;
     text-align: left !important;
     font-size: 12px !important;
   }
@@ -195,13 +189,13 @@ button {
 }
 
 .contact {
-  height: 552px;
   margin: auto;
   position: relative;
   top: -170px;
   background-color: #0a2233;
 	box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
   color: #fff;
+  padding: 20px;
 }
 
 .contact .box-send-mail {
@@ -219,7 +213,7 @@ button {
   letter-spacing: 4px;
   text-align: center;
   color: #999999;
-  margin-top: 90px;
+  margin-top: 30px;
   text-transform: uppercase;
 }
 
@@ -583,4 +577,13 @@ hr.split {
 
 .small {
     font-size: 10px;
+}
+
+#modal-full {
+  margin: 0 auto;
+}
+
+#modal-contact {
+  margin: 0 auto;
+
 }

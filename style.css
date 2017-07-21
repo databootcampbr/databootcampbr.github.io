@@ -587,3 +587,9 @@ hr.split {
   margin: 0 auto;
 
 }
+
+span.sold-out {
+    color: #FF4500;
+    margin: 10px 0;
+    display: inline-block;
+}

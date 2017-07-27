@@ -33,7 +33,7 @@
 
 @media (max-width: 1250px) {
 
-  .schedule .week {
+  .class .week {
     width: auto !important;
     float: none !important;
   }
@@ -368,37 +368,37 @@ hr.split {
   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
 }
 
-.schedule {
+.class {
   position: relative;
-  top: -100px;
+  top: -140px;
 }
 
-.schedule p {
+.class p {
   font-family: Gotham;
 }
 
-.schedule .tabs .tab:nth-child(2) {
+.class .tabs .tab:nth-child(2) {
   float: right;
 }
 
-.schedule .tabs .tab:nth-child(1) {
+.class .tabs .tab:nth-child(1) {
   float: left;
 }
-.schedule .tabs .tab a {
+.class .tabs .tab a {
   color: #0a2233;
   padding: 0px;
 }
 
-.schedule .tabs .indicator {
+.class .tabs .indicator {
   background-color: #666;
 }
 
-.schedule ol {
+.class ol {
   list-style: none;
   padding: 0 !important;
 }
 
-.schedule h2 {
+.class h2 {
   margin: 0px;
   height: 62px;
   font-size: 48px;
@@ -410,13 +410,13 @@ hr.split {
   color: #333;
 }
 
-.schedule h3 {
+.class h3 {
   color: #111;
   font-size: 20px;
   font-weight: bold;
 }
 
-.schedule .week {
+.class .week {
   position: relative;
   float: left;
   width: 426px;
@@ -428,7 +428,7 @@ hr.split {
   border-radius: 3px;
 }
 
-.schedule .week ul {
+.class .week ul {
   position: relative;
   margin: 30px 0 0 0;
   color: #777;
@@ -439,7 +439,7 @@ hr.split {
   padding-left: 40px;
 }
 
-.schedule .week:nth-child(even) {
+.class .week:nth-child(even) {
   float: right;
 }
 
@@ -592,4 +592,100 @@ span.sold-out {
     color: #FF4500;
     margin: 10px 0;
     display: inline-block;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.schedule {
+  height: 400px;
+  background-color: #F8F8F8;
+  display: block;
+  top: -140px;
+  position: relative;
+  font-family: Gotham;
+}
+
+.title-schedule {
+    font-family: Gotham-Bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: auto auto;
+    text-align: center;
+    display: block;
+    color: #333;
+    padding-top: 15px;
+}
+
+h5.location {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 15px;
+    font-size: 17px;
+}
+
+h4.date {
+    font-family: Gotham-Bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    width: 80%;
+}
+
+.schedule-class {
+  font-size: 19px;
+  color: #039be5;
+  font-weight: bold;
+}
+
+span.apply {
+  color: #039be5;
+  margin: 10px 0;
+  display: inline-block;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.sign-next {
+  height: 40px;
+  background-color: #039be5;
+  border-radius: 1px;
+  border: solid 1px #00b6f3;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.bootcamp-date .sold-out {
+  margin-top: 45px;
+}
+
+.hour {
+  display: block;
+  letter-spacing: 1px;
+}
+
+.alert {
+  display: inline-block;
+  font-family: Gotham;
+  font-size: 10px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.early-prize {
+  display: inline-block;
+}
+
+.price {
+  display: inline-block;
+  margin-top: 10px;
 }

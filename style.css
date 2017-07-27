@@ -71,6 +71,7 @@
   .contact .target {
     text-align: left !important;
     font-size: 12px !important;
+    margin-top: 15px !important;
   }
 
   .contact .catch-up {
@@ -96,6 +97,17 @@
 
   .logo {
     margin: 40px 0 10px 0;
+  }
+
+  .confirmed-title {
+    color: #fff;
+    font-family: Gotham-Bold;
+    font-size: 30px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
   }
 
 }
@@ -218,7 +230,7 @@ button {
 }
 
 .contact .info {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .contact .catch-up {
@@ -230,7 +242,6 @@ button {
 }
 
 .contact .catch-up, .contact .info {
-  /*margin-top: 100px;*/
   font-size: 20px;
   font-weight: bold;
   line-height: 1.4;
@@ -342,7 +353,7 @@ span.value {
   height: 60px;
   line-height: 60px;
   letter-spacing: -0.5px;
-  margin-top: 20px;
+  margin: 10px 0;
   text-transform: uppercase;
   text-align: center;
   font-family: Gotham;
@@ -518,9 +529,9 @@ hr.split {
 
 .thankyou_message {
   background-color: #fff;
-  width: 402px;
+  color: #333;
   height: 320px;
-  margin-top: -50px;
+  margin: -50px 0 30px 0;
   color: #0b2333;
   font-family: Gotham;
   font-size: 18px;
@@ -534,6 +545,10 @@ hr.split {
 
 .thankyou_message p {
   padding: 45px;
+}
+
+div#thankyou_message .place {
+    color: #333;
 }
 
 .top-size {
@@ -592,4 +607,47 @@ span.sold-out {
     color: #FF4500;
     margin: 10px 0;
     display: inline-block;
+}
+
+.alert {
+  display: inline-block;
+  margin-left: -10px;
+  font-size: 10px;
+  font-family: Gotham;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1px;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.confirmed {
+  color: #fff;
+  font-family: Gotham-Bold;
+  font-size: 44px;
+}
+
+h2#register.confirmed {
+  font-family: Gotham;
+  font-size: 25px;
+}
+
+a.help {
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.info.confirmed {
+  margin-top: 65px;
+}
+
+.confirmed-title {
+  color: #fff;
+  font-family: Gotham-Bold;
+  font-size: 45px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }

@@ -102,11 +102,11 @@
   .confirmed-title {
     color: #fff;
     font-family: Gotham-Bold;
-    font-size: 30px;
+    font-size: 30px !important;
     display: inline-block;
     padding: 0;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
     text-align: center;
   }
 

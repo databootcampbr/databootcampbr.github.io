@@ -180,33 +180,6 @@
       </div>
     </div>
     <div class="row show-off">Conheçam os melhores profissionais na área de bigdata da sua cidade.</div>
-    <div id="modal-shirt" class="modal row">
-      <div class="modal-content">
-        <form id="gform-shirt" class="form" method="POST"
-          action="https://script.google.com/macros/s/AKfycbznGNZ5WmZdmIB_1NEEaQ0lrIZUNmGeqspcQrP_Yw70ugg5oGHM/exec">
-
-          <div class="shirt-size">
-            <div class="input-field row">
-              <select name="size" id="size" class="col s12 m6">
-                <option value="" disabled selected>Escolha seu tamanho de camisa</option>
-                <option value="P">P</option>
-                <option value="M">M</option>
-                <option value="G">G</option>
-              </select>
-            </div>
-            <input id="code" name="code" type="hidden"/>
-
-            <div class="row">
-              <input type="submit" class="btn modal-action modal-close" value="Enviar" />
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div id="modal-full" class="modal row">
-      <p>Esta turma já está cheia! Fique de olho para proximas turmas!</p>
-      <input type="submit" class="btn modal-action modal-close" value="Fechar" />
-    </div>
     <div id="modal-contact" class="modal row">
       <div class="modal-content">
         <p>Entre em contato conosco!</p>
@@ -242,6 +215,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
   <script src="sdk.js"></script>
   <script src="share.bar.min.js"></script>
+  <script src="https://www.paypalobjects.com/api/checkout.js" data-version-4></script>
   <script>
     $(document).ready(function() {
       Materialize.updateTextFields();

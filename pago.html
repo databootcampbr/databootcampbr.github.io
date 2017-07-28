@@ -28,10 +28,10 @@
   </div>
 
   <div class="container">
-    <div class="contact row">
+    <div class="contact row" id="box-info">
       <div class="box-send-mail">
         <div class="col offset-l1 l10 s12 target offset-m3">
-          <h2 class="confirmed-title">INSCRIÇÃO CONFIRMADA</h2>
+          <h2 class="confirmed-title" id="paypal-register">INSCRIÇÃO FINALIZADA</h2>
         </div>
         <div class="col l4 offset-l1 catch-up">
           <div class="thankyou_message" id="thankyou_message">
@@ -242,19 +242,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
   <script src="sdk.js"></script>
   <script src="share.bar.min.js"></script>
-  <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
   <script>
     $(document).ready(function() {
       Materialize.updateTextFields();
-      $("button.sign").click(function(e){
-        var name = $("form #name").val();
-        var email = $("form #email").val();
-        if (name === "" || email === "") {
-          return;
-        }
-        $(".sign-please").hide();
-        $(".progress").show();
-      });
     });
   </script>
   <script>
@@ -273,37 +263,6 @@
         'networks': ['facebook', 'twitter', 'google', 'whatsapp', 'email']
       });
     });
-    var registrations = 0;
-    var url = "https://script.google.com/macros/s/AKfycbznGNZ5WmZdmIB_1NEEaQ0lrIZUNmGeqspcQrP_Yw70ugg5oGHM/exec";
-    $.getJSON(url, function(data) {
-      registrations = data.counter;
-    });
-    function checkAvailability(){
-      if (registrations >= 12) {
-        $("#modal-full").modal("open");
-      } else {
-        pagamentoPopup();
-      }
-    }
-    function pagamentoPopup(){
-      var code = '7552B437DADA655994876FB3C962B90C';
-      var isOpenLightbox = PagSeguroLightbox({
-          code: code
-      }, {
-          success : function(transactionCode) {
-              console.log(registrations);
-              $("#code").val(transactionCode);
-              $('#modal-shirt').modal('open');
-          },
-          abort : function() {
-              $("#code").val("");
-          }
-      });
-      // Redirecionando o cliente caso o navegador não tenha suporte ao Lightbox
-      if (!isOpenLightbox){
-          location.href="https://pagseguro.uol.com.br/v2/checkout/payment.html?code="+code;
-      }
-    }
   </script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -313,6 +272,12 @@
 
     ga('create', 'UA-102049615-1', 'auto');
     ga('send', 'pageview');
+  </script>
+  <script>
+    setTimeout(function(){
+      var offset = document.getElementById("box-info");
+      $("body").scrollTo(offset);
+    }, 1000);
   </script>
 </body>
 </html>

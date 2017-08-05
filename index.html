@@ -43,19 +43,30 @@
         </div>
         <div class="col l5 offset-l1 s12 send">
           <div class="info">
-            <h2 id="register">31 de Julho a 24 de Agosto</h2>
-            <p class="beta-class">Data Science para todos</p>
+            <h2 id="register">11 de Setembro a 06 de Outubro</h2>
+            <p class="beta-class">Data Science Avançado</p>
             <p class="place">
               <span class="value">My Office - Barra Da Tijuca</span></br>
               <span class="value">De Seg a Qui, das 19h as 21h.</span></br>
-              <!--<span class="value"><small>3x</small> R$ 250,00</span></br>-->
+              <span class="value"><small>3x</small> R$ 400,00</span></br>
               <span class="value small">é necessário que você leve o seu notebook</span>
-              <span class="sold-out">Inscrições encerradas</span>
+              <!-- <span class="sold-out">Inscrições encerradas</span> -->
             </p>
           </div>
           <div class="col l12 s12 sign-area">
-            <!--<button class="col s12 l8 button-success pure-button button-xlarge sign" onclick="javascript:checkAvailability();">Inscreva-se</button>-->
-            <!--<a href="#" class="col s4 l3 offset-l1 detail">+ detalhes</a>-->
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="PUHZMT8D2S74U">
+            <input type="hidden" name="on0" value="Camisa">
+            <select name="os0">
+            	<option value="P">P </option>
+            	<option value="M">M </option>
+            	<option value="G">G </option>
+            	<option value="GG">GG </option>
+            </select>
+            <button class="col s12 l8 button-success pure-button button-xlarge sign" name="submit">Inscreva-se</button>
+            </form>
+            <!-- <a href="#" class="col s4 l3 offset-l1 detail">+ detalhes</a> -->
           </div>
           <a href="#" onclick="$('#modal-contact').modal('open');">Dúvidas? Entre em contato conosco!</a>
           <hr class="col s12 split hide-on-large-only">

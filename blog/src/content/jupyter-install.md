@@ -1,3 +1,9 @@
+title: Como instalar o Jupyter
+slug: como-instalar-o-jupyter
+category: setup
+date: 2017-08-05
+modified: 2017-08-05
+
 Como instalar o Jupyter
 =======================
 

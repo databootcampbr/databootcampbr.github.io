@@ -4,8 +4,6 @@ category: setup
 date: 2017-08-05
 modified: 2017-08-05
 
-Como instalar o Jupyter
-=======================
 
 O [jupyter](https://jupyter.org/) traz a facilidade de reproduzir relatorios e artigos, e isso faz com que ele seja uma poderosa ferramenta. Ele também é facil de instalar em todas as plataformas.
 

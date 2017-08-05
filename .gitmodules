@@ -1,0 +1,3 @@
+[submodule "blog/src/attila"]
+	path = blog/src/attila
+	url = git@github.com:arulrajnet/attila.git

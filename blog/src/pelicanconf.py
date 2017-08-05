@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'databootcamp team'
 SITENAME = u'DataBootCamp'
-SITEURL = ''
+SITEURL = '/blog'
 
 PATH = 'content'
 

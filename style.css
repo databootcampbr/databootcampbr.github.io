@@ -29,6 +29,10 @@
     font-size: 8px !important;
   }
 
+  .city-class {
+    margin-top: 12px;
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -650,4 +654,19 @@ a.help {
   padding: 0;
   margin: 0;
   text-align: center;
+}
+
+.city-class {
+    display: inline-block;
+    height: 40px;
+    width: 35%;
+    background-color: #00b6f3;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.city-class.selected {
+  background-color: #b1b1b1;
 }

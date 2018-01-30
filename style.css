@@ -670,3 +670,9 @@ a.help {
 .city-class.selected {
   background-color: #b1b1b1;
 }
+
+.countdown {
+  height: 260px;
+  display: flex;
+  align-items: center;
+}

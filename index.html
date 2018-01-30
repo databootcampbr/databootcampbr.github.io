@@ -68,6 +68,18 @@
               </p>
             </div>
           </div>
+          <div class="countdown" style="display: none">
+            <div class="progress">
+              <div class="indeterminate"></div>
+            </div>
+          </div>
+          <div class="city sao-paulo col l12 s12 sign-area" style="display: none">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="DBVQGY3RKW5TS">
+            <button class="col s12 l8 button-success pure-button button-xlarge sign" name="submit">Inscreva-se</button>
+            </form>
+          </div>
           <!--<div class="col l12 s12 sign-area">-->
             <!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">-->
             <!--<input type="hidden" name="cmd" value="_s-xclick">-->
@@ -295,9 +307,14 @@
     $(".city-class").click(function(){
       var city = $(this).data("city");
       $(".city").hide();
-      $(".city."+city).show();
-      $(".city-class").removeClass("selected");
-      $(this).addClass("selected");
+      $(".countdown").show();
+      var self = this;
+      setTimeout(function(){
+        $(".city."+city).show();
+        $(".city-class").removeClass("selected");
+        $(self).addClass("selected");
+        $(".countdown").hide();
+      }, 3000);
     });
   </script>
 </body>

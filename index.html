@@ -308,6 +308,7 @@
       var city = $(this).data("city");
       $(".city").hide();
       $(".countdown").show();
+      $("form input[name='from']").val(city);
       var self = this;
       setTimeout(function(){
         $(".city."+city).show();

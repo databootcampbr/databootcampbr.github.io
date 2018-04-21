@@ -29,8 +29,8 @@ help:
 
 install:
 	pip install -r requirements.txt
-	git submodules init
-	git submodules update
+	git submodule init
+	git submodule update
 	pelican-themes --install attila	
 
 serve:

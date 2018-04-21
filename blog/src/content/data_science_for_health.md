@@ -6,7 +6,7 @@ modified: 2018-04-21
 
 # O Evento
 
-O Data Bootcamp está organizando seu primeiro evento focado em Data Science para Saúde em conjunto com Bill and Melinda Gates Foundation, Global Health Strategies e a Universidade Federal do Rio de Janeiro.
+O [Data Bootcamp](http://databootcamp.com.br) organizou seu primeiro evento focado em Data Science para Saúde em conjunto com [Bill and Melinda Gates Foundation](https://www.gatesfoundation.org/), [Global Health Strategies](http://globalhealthstrategies.com/) e a [Universidade Federal do Rio de Janeiro](https://ufrj.br/).
 
 A fundação Gates, em parceria com o Ministério da Saúde e o CNPq, está com inscrições abertas para uma chamada de financiamento de 100 mil dólares voltado a todos os projetos brasileiros, incluindo start ups, que utilizem Data Science para melhorar a saúde materno-infantil. Nesse evento serão divulgados detalhes deste programa, além de fomentar Data Science no mundo de negócios para empreendedores
 

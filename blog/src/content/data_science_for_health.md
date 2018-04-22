@@ -25,7 +25,7 @@ A fundação Gates, em parceria com o Ministério da Saúde e o CNPq, está com 
     - Fabricio Alves (Fiocruz) - [Ciência de dados para a saúde: a importância da interdisciplinaridade e da integração de dados.](https://drive.google.com/file/d/10ABnIuYI9xylb4_PT7CAxahK2NQbD3g4/view?usp=sharing)
     - Claudio Miceli (UFRJ) - Análise de dados de prontuários da faculdade de odontologia: um estudo de caso e plataforma de estudo.
 
-- Workshop de análise de dados com Python* (em breve)
+- [Workshop de análise de dados com Python.](https://github.com/tarsisazevedo/nascidos-vivos)
 
 
 ## Público alvo
